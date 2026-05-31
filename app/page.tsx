@@ -1,65 +1,101 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="mx-auto max-w-4xl p-12">
+      <div className="m-8">
+        <div>
+          <header className="border-b">
+            <div className="mx-auto max-w-4xl p-6 flex items-center justify-between gap-6">
+              {/* Left */}
+              <div className="text-4xl font-bold">F&M Healthcare</div>
+              {/* Right */}
+              <nav className="flex flex-wrap items-center justify-end gap-3">
+                <a className="px-4 py-3 border rounded" href="#about">
+                  About us
+                </a>
+                <a className="px-4 py-3 border rounded" href="#doctors">
+                  Doctors
+                </a>
+                <a className="px-4 py-3 border rounded" href="#services">
+                  Services
+                </a>
+                <a className="px-4 py-3 border rounded" href="#contact">
+                  Contact
+                </a>
+                <a
+                  className="px-4 py-3 border rounded font-semibold"
+                  href="tel:2068059044"
+                >
+                  Call Now
+                </a>
+              </nav>
+            </div>
+          </header>
+          <div className="mx-auto max-w-4xl my-9">
+            {/* Hero Section */}
+            <section id="top-hero">
+              <div className="py-20 px-6 border rounded bg-blue-100 text-blue-900 font-bold text-center box-border flex flex-col">
+                <h2 className="text-5xl"> Primary care you can trust </h2>
+                <div className="mt-4 text-sm font-normal">
+                  <p>
+                    Our clinic is dedicated to providing excellent healthcare
+                    services.
+                  </p>
+                </div>
+                <div className="flex gap-5 text-center justify-center mt-6">
+                  <a
+                    className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800"
+                    href="tel:2068059044"
+                  >
+                    Call Now
+                  </a>
+                  <a
+                    className="px-6 py-3 border-2 border-blue-700 rounded-lg font-semibold hover:bg-blue-50"
+                    href="#contact"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div className="m-8">
+            <section id="about">
+              <div className="p-6 border rounded bg-blue-400 text-white">
+                <h2>About Us</h2>
+                <p>Welcome to My Clinic, where your health is our priority.</p>
+              </div>
+            </section>
+          </div>
+          <div className="m-8">
+            <section id="doctors">
+              <div className="p-6 border rounded bg-blue-400 text-white">
+                <h2> Our Doctors</h2>
+                <p> Meet our team of experienced and compassionate doctors.</p>
+              </div>
+            </section>
+          </div>
+          <div className="m-8">
+            <section id="services">
+              <div className="p-6 border rounded bg-blue-400 text-white">
+                <h2> Our Services</h2>
+                <p>
+                  We offer a wide range of medical services to cater to your
+                  health needs.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div className="m-8">
+            <section id="contact">
+              <div className="p-6 border rounded bg-blue-400 text-white">
+                <h2> Contact Us</h2>
+                <p>Get in touch with us for appointments and inquiries.</p>
+              </div>
+            </section>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
