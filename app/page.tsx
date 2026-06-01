@@ -1,37 +1,40 @@
 export default function Home() {
   return (
-    <div className="mx-auto max-w-4xl p-12">
+    <div className="w-full">
       <div className="m-8">
         <div>
-          <header className="border-b">
-            <div className="mx-auto max-w-4xl p-6 flex items-center justify-between gap-6">
+          <header className="border-b w-full">
+            <div className="w-full px-10 py-5 flex items-center justify-between">
               {/* Left */}
-              <div className="text-4xl font-bold">F&M Healthcare</div>
+              <div className="text-2xl font-bold">F&M Healthcare</div>
               {/* Right */}
-              <nav className="flex flex-wrap items-center justify-end gap-3">
-                <a className="px-4 py-3 border rounded" href="#about">
-                  About us
+              <nav className="flex gap-3">
+                <a
+                  className="text-grey-600 text-2xl hover:text-blue-700 "
+                  href="#about"
+                >
+                  {" "}
+                  About us{" "}
                 </a>
-                <a className="px-4 py-3 border rounded" href="#doctors">
+                <span className="text-grey-600">|</span>
+                <a
+                  className="text-grey-700 text-2xl hover:text-blue-700"
+                  href="#doctors"
+                >
                   Doctors
                 </a>
-                <a className="px-4 py-3 border rounded" href="#services">
-                  Services
-                </a>
-                <a className="px-4 py-3 border rounded" href="#contact">
-                  Contact
-                </a>
+                <span className="text-grey-600">|</span>
                 <a
-                  className="px-4 py-3 border rounded font-semibold"
-                  href="tel:2068059044"
+                  className="text-grey-700 text-2xl hover:text-blue-700"
+                  href="#services"
                 >
-                  Call Now
+                  Services
                 </a>
               </nav>
             </div>
           </header>
           <div className="mx-auto max-w-4xl my-9">
-            {/* Hero Section */}
+            {/* Hero Section updated */}
             <section id="top-hero">
               <div className="py-20 px-6 border rounded bg-blue-100 text-blue-900 font-bold text-center box-border flex flex-col">
                 <h2 className="text-5xl"> Primary care you can trust </h2>
