@@ -33,10 +33,10 @@ export default function Home() {
               </nav>
             </div>
           </header>
-          <div className="mx-auto max-w-4xl my-9">
+          <div className="w-full ">
             {/* Hero Section updated */}
             <section id="top-hero">
-              <div className="py-20 px-6 border rounded bg-blue-100 text-blue-900 font-bold text-center box-border flex flex-col">
+              <div className="py-28 px-6 w-full bg-blue-100 text-blue-900 font-bold text-center  ">
                 <h2 className="text-5xl"> Primary care you can trust </h2>
                 <div className="mt-4 text-sm font-normal">
                   <p>
@@ -44,15 +44,15 @@ export default function Home() {
                     services.
                   </p>
                 </div>
-                <div className="flex gap-5 text-center justify-center mt-6">
+                <div className="flex gap-12 text-center justify-center mt-6 mb-4">
                   <a
-                    className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800"
+                    className="px-6 py-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800"
                     href="tel:2068059044"
                   >
                     Call Now
                   </a>
                   <a
-                    className="px-6 py-3 border-2 border-blue-700 rounded-lg font-semibold hover:bg-blue-50"
+                    className="px-6 py-4 border-2 border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-50"
                     href="#contact"
                   >
                     Contact Us
