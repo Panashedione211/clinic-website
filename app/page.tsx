@@ -2,7 +2,7 @@ export default function Home() {
   return (
     // Full-width page wrapper
     <div className="w-full">
-      <div className="m-8">
+      <div className="w-full">
         <div>
           {/* ── Navbar ── */}
           <header className="border-b w-full">
@@ -13,7 +13,7 @@ export default function Home() {
               {/* Navigation links on the right */}
               <nav className="flex gap-3">
                 <a
-                  className="text-grey-600 text-2xl hover:text-blue-700 "
+                  className="text-grey-600 text-base hover:text-blue-700 "
                   href="#about"
                 >
                   {" "}
@@ -21,14 +21,14 @@ export default function Home() {
                 </a>
                 <span className="text-grey-600">|</span>
                 <a
-                  className="text-grey-700 text-2xl hover:text-blue-700"
+                  className="text-grey-700 text-base hover:text-blue-700"
                   href="#doctors"
                 >
                   Doctors
                 </a>
                 <span className="text-grey-600">|</span>
                 <a
-                  className="text-grey-700 text-2xl hover:text-blue-700"
+                  className="text-grey-700 text-base hover:text-blue-700"
                   href="#services"
                 >
                   Services
@@ -41,9 +41,9 @@ export default function Home() {
           <div className="w-full ">
             <section id="top-hero">
               {/* Blue banner with headline and CTA buttons */}
-              <div className="py-28 px-6 w-full bg-blue-100 text-blue-900 font-bold text-center  ">
+              <div className="py-50 px-6 w-full bg-blue-100 text-blue-900 font-bold text-center  ">
                 <h2 className="text-5xl"> Primary care you can trust </h2>
-                <div className="mt-4 text-sm font-normal">
+                <div className="mt-4 text-lg font-normal">
                   <p>
                     Our clinic is dedicated to providing excellent healthcare
                     services.
@@ -79,7 +79,13 @@ export default function Home() {
                   Meet F&M Healthcare
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Welcome to My Clinic, where your health is our priority.
+                  F&M is founded on the belief that it is important to have
+                  balance. That caring for your health shouldn{"'"}t be
+                  burdensome. <br /> <br /> Our founders, Dr. Floyd and Dr.
+                  Maggie Sekeramayi, have built a team of highly-qualified and
+                  experienced physicians and nurse practitioners who bring their
+                  expertise and caring into skilled nursing and assisted Living
+                  communities.
                 </p>
               </div>
             </section>
@@ -100,19 +106,23 @@ export default function Home() {
                 <div className="flex gap-12 justify-center mt-12">
                   <div className="flex flex-col items-center">
                     <div
-                      className="w-32 h-32 rounded-full
+                      className="w-42 h-42 rounded-full
                   bg-gray-300 mt-6 mb-4"
                     ></div>
 
-                    <p className="">Dr Floyd Sekeramayi</p>
+                    <p className="font-semibold text-blue-900 text-2xl">
+                      Dr Floyd Sekeramayi
+                    </p>
                   </div>
 
                   <div className="flex flex-col items-center">
                     <div
-                      className="w-32 h-32 rounded-full
+                      className="w-42 h-42 rounded-full
                   bg-gray-300 mt-6 mb-4"
                     ></div>
-                    <p className="">Dr Maggie Sekeramayi</p>
+                    <p className="font-semibold text-blue-900 text-2xl">
+                      Dr Maggie Sekeramayi
+                    </p>
                   </div>
                 </div>
               </div>
@@ -120,24 +130,61 @@ export default function Home() {
           </div>
 
           {/* ── Services Section ── */}
-          <div className="m-8">
+          <div className="w-full">
             <section id="services">
-              <div className="p-6 border rounded bg-blue-400 text-white">
-                <h2> Our Services</h2>
-                <p>
-                  We offer a wide range of medical services to cater to your
-                  health needs.
+              <div className="w-full py-20 px-16 bg-white text-center">
+                <h2 className="text-4xl font-bold text-blue-900 mb-6">
+                  What Do We Offer?
+                </h2>
+
+                <h2 className="text-2xl font-bold text-blue-900 mt-12 mb-4">
+                  Personalized Care
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  First you will be evaluated by F&M Nurse Preactioners and
+                  Physicians. who will get to know you- not just what your
+                  healthcare needs are, but who you are as person. <br /> <br />{" "}
+                  After that, you will receive routine followup visits. You may
+                  request a visit at any time.
+                </p>
+                <h2 className="text-2xl font-bold text-blue-900 mt-12 mb-4">
+                  Convenience
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Remember When doctors used to make house calls? Our
+                  practitioners come to you!
+                </p>
+                <h2 className="text-2xl font-bold text-blue-900 mt-12 mb-4">
+                  Peace of Mind
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Your F&M healthcare team is present in your building, keeping
+                  a close eye on your health and wellbeing. <br /> <br /> If you
+                  are dealing with two or more chronic conditions. <br />
+                  <br /> we can also discuss remote monitoring programs to help
+                  your healthcare team more closely monitor your chronic
+                  conditions. <br /> <br />
+                  If challenges become greater, we also offer the services of
+                  our Behavioral Health{"/"}Psychiatric Nurse Practitioner
                 </p>
               </div>
             </section>
           </div>
 
           {/* ── Contact Section ── */}
-          <div className="m-8">
+          <div className="w-full">
             <section id="contact">
-              <div className="p-6 border rounded bg-blue-400 text-white">
-                <h2> Contact Us</h2>
-                <p>Get in touch with us for appointments and inquiries.</p>
+              <div className="w-full py-20 px-16 bg-blue-100 text-center">
+                <h2 className="text-4xl font-bold text-blue-900 mb-6">
+                  Get in Touch
+                </h2>
+                <p className="mb-6">Call us to book an appointment.</p>
+                <a
+                  className="text-lg px-6 py-3  bg-blue-900 text-white rounded-lg hover:bg-blue-800"
+                  href="tel:2068059044"
+                >
+                  Click to Call: (206) 805-9044
+                </a>
               </div>
             </section>
           </div>
