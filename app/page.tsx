@@ -55,7 +55,7 @@ export default function Home() {
                   {/* Calls the clinic phone number */}
                   <a
                     className="px-6 py-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800"
-                    href="tel:2068059044"
+                    href="tel:1234567890"
                   >
                     Call Now
                   </a>
@@ -183,7 +183,7 @@ export default function Home() {
                   className="text-lg px-6 py-3  bg-blue-900 text-white rounded-lg hover:bg-blue-800"
                   href="tel:2068059044"
                 >
-                  Click to Call: (206) 805-9044
+                  Click to Call: (123) 456-7890
                 </a>
               </div>
             </section>
